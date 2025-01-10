@@ -45,6 +45,8 @@ sw <- vector("numeric", 1000)
 ad <- vector("numeric", 1000)
 
 for (i in 1:1000) {
+  sample <- lista[[i]]
+  
   testesw <- shapiro.test(sample)
   sw[i] <- testesw$statistic
   
